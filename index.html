@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalija Nikolic Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Video background */
+        .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1; /* Place the video behind other content */
+        }
+
+        /* Overlay to darken the background */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .enter-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+            border: none;
+        }
+
+        .navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+            color: gray !important; /* Change color to gray for all nav items */
+        }
+    </style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="javascript:void(0)"
+           onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<video autoplay muted loop class="bg-video">
+    <source src="images/cinematic_bg.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<!-- Content overlay -->
+<div class="overlay">
+    <h1>Natalija Nikolic</h1>
+    <button class="enter-btn">Learn More</button>
+</div>
+
+<section id="about" class="container text-center my-5">
+    <img src="images/about/nata.jpeg" alt="Profile Picture" class="profile-image mb-3">
+    <h1>Natalija Nikolic</h1>
+    <p class="lead text-muted">Professional Visual Artist</p>
+
+    <div class="about-text mt-4">
+        <p>A professional visual artist with over 3 years of experience in the VFX industry, delivering high-quality
+            visuals for film, television, and commercials.</p>
+        <p>Expertise includes camera tracking and animation, dynamic
+            cinematics, organic modeling, creative direction and visual storytelling, ensuring a cohesive and innovative
+            approach to every project.</p>
+    </div>
+
+
+    <div class="container text-center my-4">
+        <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});"
+                class="btn btn-outline-primary">Skills
+        </button>
+        </button>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"
+                class="btn btn-outline-primary">Contact
+        </button>
+        <button onclick="window.location.href='images/Natalija_Nikolic_CV.pdf';" class="btn btn-outline-secondary">
+            Resume
+        </button>
+        <button onclick="window.location.href='images/Portfolio.pdf';" class="btn btn-outline-secondary">Portfolio
+        </button>
+    </div>
+    <style>
+        .btn-outline-primary {
+            margin: 0 8px;
+            color: #333; /* Change color as needed */
+            border-color: #333; /* Change border color as needed */
+        }
+
+        .btn-outline-secondary {
+            margin: 0 8px;
+            color: #666; /* Darker for contrast */
+            border-color: #666;
+        }
+    </style>
+</section>
+
+<section id="skills" class="container text-center my-5">
+    <h2 class="mb-4">Skills</h2>
+    <style>
+        #skills {
+            background-color: #000000; /* Lighter shade of blue */
+            color: #ffffff; /* White text for readability */
+            padding: 50px 0; /* Padding for better spacing */
+        }
+
+        .skill-icon {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%; /* Makes the div circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .skill-icon img {
+            max-width: 60%; /* Limits image size within the circle */
+        }
+
+        .card {
+            background: transparent; /* Optional: make the card background transparent */
+            border: none;
+        }
+
+        .card-body {
+            padding-top: 20px; /* Spacing above the text in the card */
+        }
+
+        .container {
+            width: 100%; /* Ensures the container takes up full width */
+            max-width: 100%; /* Prevents any max-width restriction */
+            padding-right: 0; /* Removes right padding */
+            padding-left: 0; /* Removes left padding */
+        }
+    </style>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="skill-icon">
+                    <img src="images/skills/unreal.jpg" alt="Unreal Engine">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Unreal Engine</h5>
+                    <p class="card-text"> Crafting dynamic cinematics with Unreal Engine delivering immersive
+                        experiences
+                        and visuals with creative techniques
+                    </p>
+                    <a href="https://www.credential.net/17a675a2-86ca-4ffb-a21f-c65291047c06#gs.gmjpdv"
+                       class="btn btn-primary">View Credentials</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="skill-icon">
+                    <img src="images/skills/pftrack.svg" alt="Motion Capture">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Matchmove</h5>
+                    <p class="card-text"> Making it possible to blend 3D elements seamlessly with live-action footage,
+                        creating a captivating visual experience </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="skill-icon">
+                    <img src="images/skills/maja.png" alt="3d modeling">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Organic modeling</h5>
+                    <p class="card-text"> Designing 3D characters and creatures using unique visuals to create memorable
+                        and engaging personalities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="text-center my-5">
+    <h2 class="mb-4">Contact Me</h2>
+
+    <div class="my-4">
+        <a href="https://www.linkedin.com/in/natalija-nikolic-93152b224/" target="_blank" class="btn icon-btn mx-2"
+           data-toggle="tooltip" data-placement="top" title="LinkedIn">
+            <img src="images/icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://nikolicnatalija7.artstation.com/" target="_blank" class="btn icon-btn mx-2"
+           data-toggle="tooltip"
+           data-placement="top" title="Artstation">
+            <img src="images/icons/artstation.png" alt="Artstation">
+        </a>
+
+        <a href="https://www.linkedin.com/in/natalija-nikolic-93152b224/" class="btn icon-btn mx-2"
+           data-toggle="tooltip" data-placement="top"
+           title="IMDB">
+            <img src="images/icons/IMDB.png" alt="IMDB">
+        </a>
+        <a href="mailto:nikolic.natalija7@gmail.com" class="btn icon-btn mx-2" data-toggle="tooltip"
+           data-placement="top"
+           title="Gmail">
+            <img src="images/icons/Gmail_Logo_512px.png" alt="Gmail">
+        </a>
+
+        <style>
+
+            #contact {
+                background-color: #000000; /* Lighter shade of blue */
+                color: #ffffff; /* White text for readability */
+                padding: 50px 0; /* Padding for better spacing */
+            }
+
+            .icon-btn {
+                width: 60px;
+                height: 60px;
+                padding: 10px;
+                border-radius: 50%;
+                background-color: #ffff;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+            }
+
+            .icon-btn img {
+                display: block;
+                width: 30px;
+                height: 30px;
+            }
+
+            .icon-btn:hover {
+                background-color: #00213a; /* Lighter shade of blue */
+                color: #ffffff; /* White text for readability */
+            }
+
+            /* Tooltip styling */
+            .tooltip-inner {
+                background-color: #555; /* Dark tooltip background */
+                color: #fff; /* White text color */
+                padding: 5px 10px;
+                border-radius: 6px;
+            }
+
+            .tooltip.bs-tooltip-top .arrow::before {
+                border-top-color: #555; /* Arrow color matches tooltip background */
+            }
+
+        </style>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.5/dist/umd/popper.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $("a.nav-link").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+            }
+        });
+    });
+
+
+    $(document).ready(function () {
+        // Handle click on "Enter Portfolio" button
+        $('.enter-btn').click(function () {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 1000);
+        });
+
+        // Handle click on "Skills" link in the "About" section
+        $('a[href="#skills"]').click(function (event) {
+            event.preventDefault(); // Prevent the default anchor click behavior
+            var sectionOffset = $("#skills").offset().top; // Get the offset top of the "Skills" section
+            $('html, body').animate({
+                scrollTop: sectionOffset
+            }, 1000);
+        });
+
+    });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip(); // Initializes all tooltips
+    });
+</script>
+</body>
